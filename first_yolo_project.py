@@ -15,7 +15,10 @@ if __name__ == '__main__': # Vérifie que le script est exécuté directement (e
     # Évalue le modèle sur un ensemble de validation pour obtenir des métriques.
     #metrics = model.val()
     # Effectue une détection d'objets sur une image externe et affiche et enregistre les résultats.
-    results = model("https://ultralytics.com/images/bus.jpg",show=True, save=True)
+    #results = model("https://ultralytics.com/images/bus.jpg",show=True, save=True,conf=0.4)
+    #results = model("./test.png", show= True, save=True)
+    #result = model(source=0, show=True)#using camera
+    result = model("./vedio.mp4", show=True, save = True)
     #path = model.export(format="onnx")
     
 
